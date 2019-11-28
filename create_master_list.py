@@ -39,17 +39,13 @@ master_set = set()
 for file in os.listdir(dir):
     f = open(dir + '/' + file)
     for line in f:
-        master_set.add(str(line).strip())
+        master_set.add(line)
     f.close()
 
 master_list = []
 for ele in master_set:
-   master_list.append(ele)
+   master_list.append("*://*." + str(ele).strip() + "*")
 
 with open('MASTER_FILTER_LIST.txt', 'w') as master:
     master.write(str(master_list))
 
-    #master.write("[")
-    #for ele in master_set:
-    #    master.write("\"*" + str(ele).strip() + "*\", ")
-    #master.write("];")
