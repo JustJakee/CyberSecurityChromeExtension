@@ -42,6 +42,10 @@ for file in os.listdir(dir):
         master_set.add(line)
     f.close()
 
+master_list = []
+for ele in master_set:
+   master_list.append("*://*." + str(ele).strip() + "/*")
+
 with open('MASTER_FILTER_LIST.txt', 'w') as master:
-    for ele in master_set:
-        master.write(str(ele))
+    master.write(str(master_list))
+
