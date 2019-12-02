@@ -1,3 +1,4 @@
+//This script is responsible for turning the extension on and off.
 window.onload = function () {
 	function updateLabel() {
 		var enabled = chrome.extension.getBackgroundPage().enabled;
