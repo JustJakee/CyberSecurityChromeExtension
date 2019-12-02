@@ -16,12 +16,12 @@ for list in input_lists:
     if ex_request.status_code != 200:
         print("failed to download list from" + list) # later substitute to log or notify owner
     else:
-        f = open("filterlists/" + list[1] + ".txt", 'w')
+        f = open("Filterlists/" + list[1] + ".txt", 'w')
         f.write(ex_request.text);
         f.close()
 
 # Formats the domains in 1Hosts.txt to match our standard.
-with open('filterlists/1Hosts.txt', 'r+') as OneHosts:
+with open('Filterlists/1Hosts.txt', 'r+') as OneHosts:
     for i in range(25):
         OneHosts.readline()
     content = OneHosts.read()
