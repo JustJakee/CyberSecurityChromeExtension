@@ -1,2 +1,3 @@
-# CyberSecurityChromeExtension
-Team [Authentication Needed] - Building AdBlock Chrome Extension for CS 455 Cyber Security
+# CS455 Cyber Security
+This Repository was built to store Project code for Cyber Security course. <br />
+Team: [Authentication Needed] -- Task: Building AdBlock Chrome Extension
